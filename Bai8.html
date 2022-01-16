@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai8</title>
+</head>
+<body>
+<button onclick="gamedoanso()">Chơi</button>
+<script>
+    function gamedoanso() {
+        let a = Number(prompt("Bạn muốn chơi trong khoảng nào?"));
+        let c = Math.floor(Math.random() * (a + 1));
+        for (let i = 0; i < 3; i++) {
+            let b = Number(prompt("Nhập số bạn đoán"));
+            if (b === c) {
+                alert("Chúc mừng bạn đã đoán trúng!");
+                break;
+            } else if (i === 2) {
+                alert("Bạn thua rồi");
+                break
+            } else if (b < c) {
+                alert("Bạn chọn 1 số lớn hơn đi !")
+            } else {
+                alert("Bạn chọn 1 số nhỏ hơn đi")
+            }
+        }
+    }
+</script>
+</body>
+</html>

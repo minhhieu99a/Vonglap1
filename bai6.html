@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai6</title>
+</head>
+<body>
+<button onclick="da()">dád</button>
+<script>
+    function da() {
+        let b = 7;
+        let c = 0;
+        let d=0;
+        while (b % 7 == 0) {
+            d+=b;
+            b+=7;
+            c++;
+            if (c == 30) {
+                break;
+            }
+        }
+        document.writeln(d);
+    }
+
+
+</script>
+</body>
+</html>

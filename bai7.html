@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai7</title>
+</head>
+<body>
+<button onclick="a()"></button>
+<script>
+    function a(){
+    let i=1;
+    while (i<=100){
+        if (i%3==0 && i%5==0){
+            document.writeln("FizzBuzz");
+        }else if (i%3==0){
+            document.writeln("Fizz");}
+        else if (i%5==0){
+            document.writeln("Buzz");
+        }else {
+        document.writeln(i);}
+        i++;
+    }}
+</script>
+</body>
+</html>
